@@ -1,0 +1,82 @@
+@charset "utf-8" 
+html {
+background-color : ghostwhite;
+}
+
+
+body {
+font-family: "Times New Roman", Times, serif;
+width : 100%;
+text-align : left;
+}
+
+
+body > header {
+font-size : 400%;
+position : sticky;
+display : block;
+width : 100%;
+height : 80px;
+top : 0;
+background-color : teal;
+text-align : center;
+font-family: "Times New Roman", Times, serif;
+font : 70px;
+color : white;
+text-align : center;
+border : black solid 2px;
+}
+
+aside > nav {
+border : black solid 2px;
+width : 20%;
+height : 250px;
+float : left;
+margin-left : 1%;
+margin-top : 1%;
+padding-left : 1%;
+background-color : teal;
+}
+
+aside > nav > h2 {
+font-size : 100%;
+}
+
+article {
+font-family: "Times New Roman", Times, serif;
+width : 50%;
+font-size: 20px;
+margin : auto auto auto auto;
+text-align : left;
+float : left;
+margin-left : 2%;
+text-align : center;
+border: 1px solid black;
+outline-style: solid;
+outline-color: black;
+}
+
+footer {
+border : black 0.5em;
+margin : 1em;
+padding-left : 0.5em;
+clear : both;
+}
+
+footer > address {
+text-align : center;
+
+}
+
+a:link {
+color : black;
+}
+
+img[src="https://i.ytimg.com/vi/d5fzMhPNSAU/maxresdefault.jpg"]{
+  border-radius: 30px;
+  height: 400px;
+  width: 400px;
+  padding:1px;
+  border:1px solid #021a40;
+  background-color:#ff0;
+}

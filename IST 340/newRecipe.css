@@ -1,0 +1,181 @@
+@charset "utf-8";
+
+/************ BASE FORMAT ***************/
+
+html{
+	width: 100%;
+	height: 100%;
+	background-color: #E6E6FA;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	color: rgb(91, 91, 91);
+	font-family: "Times New Roman", Times, serif;
+}
+
+/********* TECHNIQUE 1-MAKES HEADER TRANSPARENT *********/
+body > header {
+	display: block;
+	text-align: right;
+	width: 100%;
+	height: 4em;
+	top: 0px;
+	background-color: #62B1E880;  
+	opacity: 0.5;
+}
+
+
+/* STICKY TOP */
+body > header {
+    position: -webkit-sticky; 
+    position: sticky;
+	
+}
+
+/************ HEADER DESIGN ***************/
+/*WHITE BLOCK AT TOP*/
+body > header nav {
+	display: block;
+	width: 100%;
+	height: 75px;
+	top: 0px;
+	background-color: #FFFFFF;
+	border-bottom: 2px solid #472907;
+
+}
+
+/*LOCATION OF NAV*/
+body > header nav ul {
+	position: relative;
+	float: right;
+	top: 0.5rem;
+	list-style: none;
+	display: inline;
+	padding-right: 1rem;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 18px;
+}
+
+/*SPACING*/
+body > header > nav ul li {
+	display: inline;
+	padding-right: 5rem;
+}
+
+/*DECORATION*/
+body > header > nav ul li a {
+	color: #191722;
+	text-decoration: none;
+	letter-spacing: 0.1rem;
+}
+
+/********* TECHNIQUE 2-IMAGE ROTATION TRANSFORMATION*********/
+/**IMAGE MOVEMENT**/
+img:hover {
+  transform: scaleX(-1); /**not going to ruin the surprise just hover the mouse
+  over the picture**/ 
+}
+
+/********* TECHNIQUE 3-TEXT SHADOW *********/
+/** TITLE DESIGN **/
+
+header > h1 {
+	position: absolute;
+	float: top;
+	top: 0.5rem;
+	left: 2rem;
+	font-family: "Times New Roman", Times, serif;
+	text-shadow: 1px 1px 0px #ededed, 2px 4px 0px rgba(0,0,0,0.15);
+}
+
+/**INGREDIENTS SHADOW**/
+aside > h2 {
+	text-shadow: 1px 1px 0px #ededed, 2px 4px 0px rgba(0,0,0,0.15)
+}
+
+/**MEXICAN BURRITO SHADOW**/
+article > h2 {
+	text-shadow: 1px 1px 0px #ededed, 2px 4px 0px rgba(0,0,0,0.15);
+}
+
+/**MAKING THE TABLES ALIGN UP**/
+.row {
+	margin-top: 3%;
+}
+
+
+.column {
+	float: left;
+	box-sizing: border-box;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+/********* TECHNIQUE 4-DOTTED BOARDER STYLE *********/
+#left {
+	margin-left: 3%;
+	margin-right: 5%;
+	width: 25%;
+	padding: 3rem;
+	background-color: #FFFFFF;
+	box-shadow: black -3px -3px 20px;
+	border: 5px solid #472907;
+	border-style: dotted;
+	border-color: #B0C4DE;
+	
+}
+
+#left ul {
+	margin-left: -2rem;
+}
+
+#left li {
+	margin: 15px;
+}
+
+/*** RIGH TABLE***/
+
+#right {
+	width: 63%;
+	padding: 3rem;
+	background-color: #FFFFFF;
+	box-shadow: black -3px -3px 20px;
+	border: 5px solid #472907;
+	border-style: dotted;
+	border-color: #B0C4DE;
+}
+#right ol {
+	padding-top: 2px;
+}
+
+
+#right li {
+	margin: 15px;
+}
+
+#right img {
+	float: right;
+}
+
+
+
+/************ FOOTER *******************/
+footer {
+	clear: right;
+	text-align: center;
+	vertical-align: center;
+	background-color: #FFFFFF;
+	border-top: 2px solid #472907;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	font-family: "Times New Roman", Times, serif;
+}
+

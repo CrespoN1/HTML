@@ -1,0 +1,154 @@
+@charset "utf-8";
+/*===================================
+    WEBSITE UNDER CONSTRUCTION
+	 Last Updated: 04/02/2020
+  ===================================
+
+	 Author: Norberto Crespo
+	 Start Date: 04/02/2020
+	 Contact: crespon1@tcnj.edu 
+ 	 
+ 	 Website Type: Blog
+ 	 Document: covid.css
+
+ ===================================== */ 
+ 
+ 
+ /* DEFAULT STYLE FOR THE WEBPAGE */
+html { width: 100%;
+	   height: 100%;
+	  background-color: #F8F8FF;
+}
+
+/* BODY STYLE */
+/* SETS THE COLOR AND MARGINS */
+body { margin: auto;
+       color: black;	   
+     }
+
+/** MAIN BODY AND ASIDE POSITIONING **/
+main { 
+	float: left; 
+	width: auto; 
+	height: auto;
+ }
+ 
+aside { 
+	float: right; 
+	width: 60%; 
+	height: auto; 
+	}
+
+/** IMAGE STYLE WITH BORDER RADIUS **/
+img {
+     display: block;
+     max-width: 100%;
+     height: auto;
+     border-radius:5px; 
+     }
+
+/** TECHNIQUE 1: USE VW FONT SIZE SO HEADER FITS ON DIFFERENT SIZE SCREENS **/
+h1 {
+		font-size: 3.5rem;
+		text-align: center;
+		font-family: "Times New Roman", Times, serif;
+		text-shadow: 1px 1px 0px #F8F8FF, 2px 4px 0px rgba(0,0,0,0.15);
+		}
+		
+h2	{
+		font-size: 2.5rem;
+		font-family: "Times New Roman", Times, serif;
+		}
+
+		
+		
+/** STYLE FOR NAVIGATION AT TOP INCLUDING MARGIN, WIDTH AND ALIGNMENT **/	  
+div.header {
+     margin: 0 auto;
+     max-width: 1600px;
+     text-align:center;
+     }
+  
+  /** MAIN TEXT STYLE **/
+  div.storyText {
+     padding: .2em 1em 1.5em;
+	 font-family: "Times New Roman", Times, serif;
+	 font-size: 20px;
+	 text-align: left;
+     }
+	
+/** NAVIGATION, INTERNAL BOOKMARKS, STYLE **/
+/** TECHNIQUE 2: USE OF FLEX LAYOUT FOR BOOKMARK NAVIGATION AT TOP OF PAGE **/
+nav ul {
+	font-family: "Times New Roman", Times, serif;
+	font-size:35px;
+     list-style: none;
+     margin: auto;
+     padding: 10px;
+     display: flex; 
+     flex-flow: row wrap; 
+	 border: dotted black;
+     }
+
+ 
+nav li {
+     padding: 3px;
+     flex: 1 1 250px;
+     }	
+
+	
+a:link, a:visited {
+      color: rgb(128, 0, 128);
+     }
+   
+
+a:hover, a:active {
+      color: rgb(100, 149, 237);
+      transform: scale(1.2);
+      border: 1px solid black;
+      }
+
+
+  
+  /** TECHNIQUE 3: VARIABLE COLORS WITH CHANGING SIZE SCREENS **/
+  
+ /** SECTION ELEMENT STYLES FOR SMALL SCREEN OR PHONE  **/
+ @media only screen and (max-width: 480px){
+.freeTime { background-color: rgb(102, 204, 255);} 
+.family  { background-color: rgb(204, 204, 255);} 
+.fitness   { background-color: rgb(204, 255, 255); } 
+.academics  { background-color: rgb(204, 255, 204); } 
+
+/** TECHNIQUE 4: BOOKMARKS ALIGN TO THE LEFT FOR PHONE SIZE SCREEN ONLY **/
+div.header{text-align: left;} 
+ }
+ 
+/** SECTION ELEMENT STYLES FOR MEDIUM SCREEN OR TABLET USING MEDIA CODE **/
+@media screen and (min-width: 481px){
+.freeTime { background-color: rgb(255, 204, 255); } 
+.family { background-color: rgb(204, 102, 255);} 
+.fitness  { background-color: rgb(153, 102, 255);} 
+.academics  { background-color: rgb(153, 153, 255);} 
+}
+
+/** SECTION ELEMENT STYLES FOR LARGE SCREEN OR LAPTOP USING MEDIA CODE **/
+@media screen and (min-width: 769px) { 
+.freeTime { background-color: rgb(255, 102, 102); }
+.family  { background-color: rgb(255, 153, 102);} 
+.fitness  { background-color: rgb(204, 102, 153);} 
+.academics  { background-color: rgb(204, 255, 51);} 
+}
+
+	 
+/** FOOTER STYLE **/
+footer{
+     background-color: #FFE4E1;
+     font-size: 20px;
+	 font-family: "Times New Roman", Times, serif;
+     padding: 1.5em;
+	 border: 2px solid black;
+	 margin-top: 2%;
+     text-align: center;
+     }
+ 
+ 
